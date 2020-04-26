@@ -4,7 +4,6 @@ Made by Zain
 '''
 #!importing libraries
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
 import pandas as pd
