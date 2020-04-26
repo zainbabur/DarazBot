@@ -5,7 +5,6 @@ Made by Zain
 #!importing libraries
 from selenium import webdriver
 from bs4 import BeautifulSoup as soup
-from urllib.request import urlopen
 import pandas as pd
 import time
 import smtplib
@@ -51,12 +50,10 @@ for url in urls:
         
         #!open url and wait 1 minute for it to fully load
         driver.get(url)
-        #wait = WebDriverWait(driver, 600)
         time.sleep(60)
 
         #!get html from the page
         my_html = driver.page_source
-        #my_request.close()
 
         #!passing html to beautifulsoup 
         my_soup = soup(my_html, "html.parser")
